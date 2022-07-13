@@ -1,13 +1,117 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  box-sizing: border-boxs;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+  display: block;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*, ::after, ::before {
+  box-sizing: inherit;
+}
+
+.section {
+  margin: 10px 0;
+}
+
+.section__backgroundColor {
+  background-color: white;
+  padding: 20px;
+  margin: 3px;
+}
+
+.section__buttonTaskList {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 20px;
+  margin: 0 3px;
+}
+
+@media (max-width: 767px) {
+  .section__buttonTaskList {
+      display: flex;
+      flex-wrap: wrap;
+  }
+.section__taskListHeaderButton{
+  width: 100%;
+}
+}
+.section__taskListHeaderButton {
+  background-color: inherit;
+  margin: 0px;
+  padding: 10px;
+  border: none;
+  transition: 1s;
+  color: teal;
+}
+
+.section__taskListHeaderButton:hover {
+  color: hsl(180, 100%, 35%);
+}
+.section__taskListHeaderButton:active {
+  color: hsl(180, 100%, 45%);
+}
+
+
+.section__buttonDone {
+  width: 35px;
+  height: 35px;
+  background-color: green;
+  color: white;
+  padding: 0;
+  border: none;
+  transition: 1s;
+}
+
+.section__headerWeight {
+  font-weight: 600;
+  padding: 10px;
+  margin: 3px;
+}
+
+.section__buttonDone:hover {
+  background-color: hsl(120, 100%, 30%);
+}
+
+.section__buttonDone:active {
+  background-color: hsl(120, 100%, 40%);
+}
+
+.section__buttonDone--checked {
+  text-decoration: line-through;
+}
+
+.section__buttonDelete {
+  width: 35px;
+  height: 35px;
+  background-color: rgb(219, 84, 84);
+  color: white;
+  padding: 0;
+  border: none;
+  transition: 1s;
+}
+
+.section__buttonDelete:hover {
+  background-color: hsl(0, 65%, 65%);
+}
+
+.section__buttonDelete:active {
+  background-color: hsl(0, 65%, 70%);
+}
+
+.section__taskListHeaderButton--hide {
+  display: none;
+}
+
+.body {
+  background-color: #eee;
+  margin: 30px auto;
+  word-break: break-word;
+}
+
+.body__main {
+  grid-template-columns: 1fr;
+  max-width: 1000px;
+  padding: 20px;
+  margin: 0 auto;
 }

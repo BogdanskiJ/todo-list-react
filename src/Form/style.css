@@ -1,0 +1,231 @@
+.section__backgroundColor {
+    background-color: white;
+    padding: 20px;
+    margin: 3px;
+}
+.sectionAddingTask__inputField {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-gap: 20px;
+    font-size: 18px;
+}
+
+@media (max-width: 767px) {
+    .sectionAddingTask__inputField {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sectionAddingTask__height {
+        width: 100%;
+        text-align: center;
+    }
+
+    .sectionAddingTask__button {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+.sectionAddingTask__height {
+    padding: 10px;
+}
+
+.sectionAddingTask__button {
+    background-color: teal;
+    color: white;
+    border: none;
+    transition: 1s;
+}
+
+.sectionAddingTask__button:hover {
+    background-color: hsl(180, 100%, 30%);
+    transform: scale(1.1);
+}
+
+.sectionAddingTask__button:active {
+    background-color: hsl(180, 100%, 40%);
+}
+
+
+
+
+
+
+
+
+
+
+
+.body {
+    background-color: #eee;
+    margin: 30px auto;
+    word-break: break-word;
+}
+
+.body__main {
+    grid-template-columns: 1fr;
+    max-width: 1000px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sectionTaskList__newTask {
+    border-bottom: 3px solid #eee;
+    padding: 10px;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.sectionTaskList__tasks {
+    padding: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section {
+    margin: 10px 0;
+}
+
+
+
+.section__buttonTaskList {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 20px;
+    margin: 0 3px;
+}
+
+@media (max-width: 767px) {
+    .section__buttonTaskList {
+        display: flex;
+        flex-wrap: wrap;
+    }
+.section__taskListHeaderButton{
+    width: 100%;
+}
+}
+.section__taskListHeaderButton {
+    background-color: inherit;
+    margin: 0px;
+    padding: 10px;
+    border: none;
+    transition: 1s;
+    color: teal;
+}
+
+.section__taskListHeaderButton:hover {
+    color: hsl(180, 100%, 35%);
+}
+.section__taskListHeaderButton:active {
+    color: hsl(180, 100%, 45%);
+}
+
+
+.section__buttonDone {
+    width: 35px;
+    height: 35px;
+    background-color: green;
+    color: white;
+    padding: 0;
+    border: none;
+    transition: 1s;
+}
+
+.section__headerWeight {
+    font-weight: 600;
+    padding: 10px;
+    margin: 3px;
+}
+
+.section__buttonDone:hover {
+    background-color: hsl(120, 100%, 30%);
+}
+
+.section__buttonDone:active {
+    background-color: hsl(120, 100%, 40%);
+}
+
+.section__buttonDone--checked {
+    text-decoration: line-through;
+}
+
+.section__buttonDelete {
+    width: 35px;
+    height: 35px;
+    background-color: rgb(219, 84, 84);
+    color: white;
+    padding: 0;
+    border: none;
+    transition: 1s;
+}
+
+.section__buttonDelete:hover {
+    background-color: hsl(0, 65%, 65%);
+}
+
+.section__buttonDelete:active {
+    background-color: hsl(0, 65%, 70%);
+}
+
+.section__taskListHeaderButton--hide {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
