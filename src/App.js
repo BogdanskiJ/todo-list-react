@@ -6,6 +6,10 @@ import Buttons from "./Buttons";
 import "./Buttons/style.css";
 import Section from "./Section";
 import "./Section/style.css";
+import Header from "./Header";
+import "./Header/style.css";
+import Container from "./Container";
+import "./Container/style.css";
 
 const tasks = [
   { id: 1, content: "przejść na Reacta", done: false },
@@ -16,25 +20,20 @@ const hideDoneTask = false;
 
 function App() {
   return (
-    <main className="body__main">
-      <header>
-        <h1>Lista zadań</h1>
-      </header>
-      <section className="section">
-        <h2 className="section__headerWeight section__backgroundColor">Dodaj nowe zadanie</h2>
-        <div>
-          <Form />
-        </div>
-        <div className="section__buttonTaskList">
-          <h2 className="section__headerWeight">Lista zadań</h2>
-          <Buttons tasks={tasks} hideDoneTask={hideDoneTask}/>
-        </div>
-        <div className="section__backgroundColor">
-          <Tasks tasks={tasks} hideDoneTask={hideDoneTask}/>
-        </div>
-      </section>
+    <Container>
+      <Header title="Lista zadań" />
+      <Section
+        title="Dodaj nowe zadanie"
+        body={<Form />}
+      />
 
-    </main>
+      <Section
+        title="Lista zadań"
+        body={<Tasks tasks={tasks} hideDoneTask={hideDoneTask} />}
+        extraHeaderContent={<Buttons tasks={tasks} hideDoneTask={hideDoneTask} />}
+      />
+
+    </Container>
   );
 }
 
