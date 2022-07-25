@@ -1,0 +1,8 @@
+.section__buttonTaskList {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 20px;
+    margin: 0 3px;
+    align-items: center;
+  }

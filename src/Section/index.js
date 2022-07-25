@@ -4,7 +4,7 @@ import "./style.css";
 
 
 const Section = ({title, body, extraHeaderContent}) => (
-<section>
+<section className="section">
         <div className="section__buttonTaskList">
           <h2 className="section__headerWeight">{title}</h2>
           {extraHeaderContent}
