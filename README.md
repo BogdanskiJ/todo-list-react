@@ -1,6 +1,26 @@
-# Getting Started with Create React App
+# To Do List (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of content
+- Demo
+- General info
+- To Do List
+- Technologies
+
+## Demo
+https://kubabogd.github.io/taskManager/
+
+## General info
+Task Manager online. You can easly add and remove your task. With this application you will be able organize your work.
+
+## Adding and Removing Tasks
+![Task Manager Gif](images/toDoListReact.gif)
+
+## Technologies
+- HTML
+- CSS
+- JS
+- ES6
+- BEM
 
 ## Available Scripts
 
