@@ -1,9 +1,9 @@
-# Task Manager
+# To Do List (React)
 
 ## Table of content
 - Demo
 - General info
-- Task Manager
+- To Do List
 - Technologies
 
 ## Demo
@@ -12,10 +12,8 @@ https://kubabogd.github.io/taskManager/
 ## General info
 Task Manager online. You can easly add and remove your task. With this application you will be able organize your work.
 
-![Task Manager](images/share3.jpg)
-
 ## Adding and Removing Tasks
-![Task Manager Gif](images/taskManager2.gif)
+![Task Manager Gif](images/toDoListReact.gif)
 
 ## Technologies
 - HTML
