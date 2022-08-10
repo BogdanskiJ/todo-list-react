@@ -13,12 +13,6 @@ html {
   box-sizing: inherit;
 }
 
-
-
-
-
-
-
 @media (max-width: 767px) {
   .section__buttonTaskList {
     display: flex;
