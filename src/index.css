@@ -6,6 +6,7 @@ html {
   max-width: 1000px;
   background-color: #f0f0f0;
   padding: 10px;
+  margin: auto;
 }
 
 *, ::after, ::before {
@@ -20,13 +21,15 @@ html {
 
 @media (max-width: 767px) {
   .section__buttonTaskList {
-      display: flex;
-      flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
   }
-.section__taskListHeaderButton{
-  width: 100%;
+
+  .section__taskListHeaderButton {
+    width: 100%;
+  }
 }
-}
+
 .section__taskListHeaderButton {
   background-color: inherit;
   margin: 0px;
@@ -39,6 +42,7 @@ html {
 .section__taskListHeaderButton:hover {
   color: hsl(180, 100%, 35%);
 }
+
 .section__taskListHeaderButton:active {
   color: hsl(180, 100%, 45%);
 }
