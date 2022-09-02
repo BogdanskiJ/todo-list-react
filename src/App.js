@@ -11,7 +11,6 @@ import Header from "./Header";
 import "./Header/style.css";
 import Container from "./Container";
 import "./Container/style.css";
-import LocalStorage from "./LocalStorage";
 
 function App() {
   const [hideDone, setHideDone] = useState(false);
