@@ -11,18 +11,18 @@ import Header from "./Header";
 import "./Header/style.css";
 import Container from "./Container";
 import "./Container/style.css";
-
+import LocalStorage from "./LocalStorage";
 
 function App() {
   const [hideDone, setHideDone] = useState(false);
-  const [tasks, setTasks] = useState([
-    { id: 1, content: "przejść na Reacta", done: false },
-    { id: 2, content: "zjeść obiad", done: true },
-  ]);
-
   const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone);
   };
+
+  const LocalStorageTasks =
+    localStorage.getItem("tasks");
+
+  const [tasks, setTasks] = useState(JSON.parse(localStorage.getItem("tasks")) || []);
 
   const removeTask = (id) => {
     setTasks(tasks => tasks.filter(task => task.id !== id));
@@ -54,6 +54,7 @@ function App() {
         id: tasks.length === 0 ? 1 : tasks[tasks.length - 1].id + 1,
       }
     ])
+
   };
 
   return (

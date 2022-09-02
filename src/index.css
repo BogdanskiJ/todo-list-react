@@ -15,10 +15,6 @@ html {
 
 
 
-
-
-
-
 @media (max-width: 767px) {
   .section__buttonTaskList {
     display: flex;
