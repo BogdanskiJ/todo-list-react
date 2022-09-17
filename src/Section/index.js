@@ -1,18 +1,18 @@
 import React from 'react';
-import "./style.css";
+import { SectionJs, DivJs, HeaderJs, BackgroundColor } from "./styled";
 
 
 
 const Section = ({ title, body, extraHeaderContent }) => (
-  <section className="section">
-    <div className="section__buttonTaskList">
-      <h2 className="section__headerWeight">{title}</h2>
+  <SectionJs>
+    <DivJs>
+      <HeaderJs>{title}</HeaderJs>
       {extraHeaderContent}
-    </div>
-    <div className="section__backgroundColor">
+    </DivJs>
+    <BackgroundColor className="section__backgroundColor">
       {body}
-    </div>
-  </section>
+    </BackgroundColor>
+  </SectionJs>
 
 
 );

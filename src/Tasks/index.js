@@ -1,30 +1,27 @@
-import "./style.css";
+import { TaskList, NewTaskList, ButtonJs, Content, ButtonDelete } from "./styled";
 
 
 const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
         localStorage.setItem("tasks", JSON.stringify(tasks)),
-        <ul className="sectionTaskList__tasks">{
+        <TaskList>{
                 tasks.map(task => (
-                        <li
-
-                                className={`sectionTaskList__newTask ${task.done && hideDone ? "  sectionTaskList__tasks--hidden " : " "}`}
-                                key={task.id}
-                        >
-                                <button
-                                        className="section__buttonDone"
+                        <NewTaskList
+                                hidden={task.done && hideDone}
+                                key={task.id}>
+                                <ButtonJs
                                         onClick={() => toggleTaskDone(task.id)}
                                 > {task.done ? "✓" : ""}
-                                </button>
-                                <span className={`"js-taskDone ${task.done ? " section__buttonDone--checked " : ""}"`}> {task.content}</span>
-                                <button
-                                        className="section__buttonDelete js-remove"
+                                </ButtonJs>
+                                <Content done={task.done}>
+                                        {task.content}</Content>
+                                <ButtonDelete buttonDelete
                                         onClick={() => removeTask(task.id)}
                                 >
-                                        🗑</button>
-                        </li>
+                                        🗑</ButtonDelete>
+                        </NewTaskList>
 
                 ))
-        }</ul>
+        }</TaskList>
 
 );
 

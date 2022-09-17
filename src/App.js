@@ -1,16 +1,10 @@
 import React, { useState } from "react";
 import Form from "./Form";
 import Tasks from "./Tasks";
-import "./Form/style.css";
-import "./Tasks/style.css";
 import Buttons from "./Buttons";
-import "./Buttons/style.css";
 import Section from "./Section";
-import "./Section/style.css";
 import Header from "./Header";
-import "./Header/style.css";
 import Container from "./Container";
-import "./Container/style.css";
 
 function App() {
   const [hideDone, setHideDone] = useState(false);
