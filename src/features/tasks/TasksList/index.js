@@ -1,7 +1,7 @@
 import { TaskList, NewTaskList, ButtonJs, Content, ButtonDelete } from "./styled";
 
 
-const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
+const TasksList = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
         localStorage.setItem("tasks", JSON.stringify(tasks)),
         <TaskList>{
                 tasks.map(task => (
@@ -25,4 +25,4 @@ const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
 
 );
 
-export default Tasks; 
+export default TasksList; 
