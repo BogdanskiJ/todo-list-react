@@ -24,13 +24,20 @@ const tasksSlice = createSlice({
             const index = tasks.findIndex(({ id }) => id === payload);
             tasks.splice(index, 1);
         },
+        setAllDone: ({ tasks }, { payload }) => {
+           for (const task in tasks) {
+            console.log("jestem w pętli")
+            tasks[task].done = true;
+           };
+        },
+    }
+},
 
-        //według lekcji
-        // removeTask - użyć splice
-        //setAllDone - iterować po tablicy
-    },
-});
+    //według lekcji
+    // removeTask - użyć splice
+    //setAllDone - iterować po tablicy
+);
 
-export const { addTask, toggleHideDone, toggleTaskDone, removeTask } = tasksSlice.actions;
+export const { addTask, toggleHideDone, toggleTaskDone, removeTask, setAllDone } = tasksSlice.actions;
 export const selectTasks = state => state.tasks;
 export default tasksSlice.reducer;

@@ -48,7 +48,6 @@ export const useTasks = () => {
     return {
         tasks,
         toggleTaskDone,
-        setAllDone,
         addNewTask,
     };
 };
