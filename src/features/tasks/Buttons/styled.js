@@ -8,21 +8,27 @@ export const ButtonJs = styled.button`
     transition: 1s;
     color: teal;
 
+   
+
     @media (max-width: 767px) {
         width: 100%;
         margin-bottom: 5px;
-        }
+    };
 
     &:hover{
         color: hsl(180, 100%, 35%);
-    }
+    };
 
     &:active{
         color: hsl(180, 100%, 45%); 
-    }
+    };
+
+    &:disabled{
+        color: dimgrey;
+        opacity: 1s;
+    };
 
     ${({ hide }) => hide && css`
         display:none;
     `}
-
 `;

@@ -13,7 +13,6 @@ const Form = () => {
     const onFormSubmit = (event) => {
         event.preventDefault();
         const trimmedNewTaskContent = newTaskContent.trim();
-
         if (!trimmedNewTaskContent) {
             return;
         }
@@ -22,8 +21,6 @@ const Form = () => {
             done: false,
             id: nanoid(),
         }));
-
-
         setNewTaskContent("");
         inputRef.current.focus();
     };
