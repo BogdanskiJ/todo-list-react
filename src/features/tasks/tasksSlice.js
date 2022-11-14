@@ -10,8 +10,6 @@ const tasksSlice = createSlice({
     reducers: {
         addTask: ({ tasks }, { payload }) => {
             tasks.push(payload);
-            console.log(payload)
-            console.log(tasks)
         },
         toggleHideDone: state => {
             state.hideDone = !state.hideDone;
@@ -26,16 +24,12 @@ const tasksSlice = createSlice({
         },
         setAllDone: ({ tasks }, { payload }) => {
            for (const task in tasks) {
-            console.log("jestem w pętli")
+
             tasks[task].done = true;
            };
         },
     }
 },
-
-    //według lekcji
-    // removeTask - użyć splice
-    //setAllDone - iterować po tablicy
 );
 
 export const { addTask, toggleHideDone, toggleTaskDone, removeTask, setAllDone } = tasksSlice.actions;
