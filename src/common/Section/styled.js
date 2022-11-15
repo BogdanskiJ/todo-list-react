@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const SectionJs = styled.section`
     margin: 10px 5px;
