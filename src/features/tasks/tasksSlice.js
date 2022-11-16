@@ -29,6 +29,7 @@ const tasksSlice = createSlice({
             };
         },
         fetchExampleTasks: () => { },
+        
         setTasks: (state, { payload: tasks }) => {
             state.tasks = tasks;
         }

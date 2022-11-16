@@ -3,11 +3,12 @@ import { SectionJs, DivJs, HeaderJs, BackgroundColor } from "./styled";
 
 
 
-const Section = ({ title, body, extraHeaderContent }) => (
+const Section = ({ title, body, extraHeaderContent, setExampleTasks }) => (
   <SectionJs>
     <DivJs>
       <HeaderJs>{title}</HeaderJs>
       {extraHeaderContent}
+      {setExampleTasks}
     </DivJs>
     <BackgroundColor className="section__backgroundColor">
       {body}
