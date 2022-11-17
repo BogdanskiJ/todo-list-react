@@ -2,22 +2,23 @@ import React from "react";
 import Tasks from "./features/tasks/Tasks";
 import { Link, Switch, Route, HashRouter } from "react-router-dom";
 import Author from "./features/author/Author";
+import { StyledNav, StyledLiList, StyledUlList, StyledLink} from "./styled";
 
 export default () => (
     <HashRouter>
-        <nav>
-            <ul>
-                <li>
-                    <Link to="/zadania">
+        <StyledNav>
+            <StyledUlList>
+                <StyledLiList>
+                    <StyledLink to="/zadania">
                         Zadania
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/autor">
+                    </StyledLink>
+                </StyledLiList>
+                <StyledLiList>
+                    <StyledLink to="/autor">
                         Autor
-                    </Link>
-                </li>
-            </ul>
+                    </StyledLink>
+                </StyledLiList>
+            </StyledUlList>
             <Switch>
                 <Route path="/zadania">
                     <Tasks />;
@@ -26,7 +27,7 @@ export default () => (
                     <Author />;
                 </Route>
             </Switch>
-        </nav>
+        </StyledNav>
     </HashRouter>
 
 
