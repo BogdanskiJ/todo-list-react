@@ -1,6 +1,6 @@
 import React from "react";
 import Tasks from "./features/tasks/Tasks";
-import { Link, Switch, Route, HashRouter } from "react-router-dom";
+import { Link, Switch, Route, HashRouter, Redirect } from "react-router-dom";
 import Author from "./features/author/Author";
 import { StyledNav, StyledLiList, StyledUlList, StyledLink} from "./styled";
 
@@ -25,6 +25,9 @@ export default () => (
                 </Route>
                 <Route path="/autor">
                     <Author />;
+                </Route>
+                <Route path="/">
+                    <Redirect to="/zadania"></Redirect>;
                 </Route>
             </Switch>
         </StyledNav>
