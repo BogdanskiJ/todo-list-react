@@ -21,8 +21,7 @@ export const ExampleTaskButtons = () => {
         <div>
             {exampleTasksStatus.state === false
                 ? (
-                    <ButtonJs onClick={
-                        () => timeout()}>
+                    <ButtonJs onClick={() => timeout()}>
                         Pobierz przykładowe zadania
                     </ButtonJs>
                 )
@@ -35,13 +34,6 @@ export const ExampleTaskButtons = () => {
         </div>
     );
 };
-
-
-
-
-
-
-
 
 
 
