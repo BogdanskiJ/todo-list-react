@@ -1,7 +1,7 @@
 import React from "react";
 import Form from "./Form";
 import TasksList from "./TasksList";
-import Buttons, { ExampleTaskButtons } from "../../Buttons";
+import Buttons, { ExampleTaskButtons } from "./Buttons";
 import Section from "../../common/Section";
 import Header from "../../common/Header";
 import Container from "../../common/Container";
