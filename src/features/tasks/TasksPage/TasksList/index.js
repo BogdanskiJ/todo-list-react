@@ -1,13 +1,13 @@
 import React from "react";
 import { TaskList, NewTaskList, ButtonJs, Content, ButtonDelete } from "./styled";
 import { useSelector, useDispatch } from "react-redux";
-import { selectTasks, toggleTaskDone , removeTask} from "../../tasksSlice";
+import { selectTasks, toggleTaskDone, removeTask } from "../../tasksSlice";
+import { Link } from "react-router-dom";
 
 const TasksList = () => {
     const { tasks, hideDone } = useSelector(selectTasks);
     const dispatch = useDispatch();
     return (
-        //   localStorage.setItem("tasks", JSON.stringify("tasks")),
         <TaskList>{
             tasks.map(task => (
                 <NewTaskList
@@ -18,7 +18,8 @@ const TasksList = () => {
                     > {task.done ? "✓" : ""}
                     </ButtonJs>
                     <Content done={task.done}>
-                        {task.content}</Content>
+                        <Link to={`/zadania/${task.id}`}>{task.content}</Link>
+                    </Content>
                     <ButtonDelete buttonDelete
                         onClick={() => dispatch(removeTask(task.id))}
                     >

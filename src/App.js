@@ -1,8 +1,9 @@
 import React from "react";
-import Tasks from "./features/tasks/Tasks";
+import TasksPage from "./features/tasks/TasksPage/index";
+import TaskPage from "./features/tasks/TaskPage";
 import { Link, Switch, Route, HashRouter, Redirect } from "react-router-dom";
 import Author from "./features/author/Author";
-import { StyledNav, StyledLiList, StyledUlList, StyledLink} from "./styled";
+import { StyledNav, StyledLiList, StyledUlList, StyledLink } from "./styled";
 
 export default () => (
     <HashRouter>
@@ -20,8 +21,11 @@ export default () => (
                 </StyledLiList>
             </StyledUlList>
             <Switch>
+                <Route path="/zadania/:id">
+                    <TaskPage />;
+                </Route>
                 <Route path="/zadania">
-                    <Tasks />;
+                    <TasksPage />;
                 </Route>
                 <Route path="/autor">
                     <Author />;
