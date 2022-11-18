@@ -22,23 +22,20 @@ export default () => (
             </StyledUlList>
             <Switch>
                 <Route path="/zadania/:id">
-                    <TaskPage />;
+                    <TaskPage />
                 </Route>
                 <Route path="/zadania">
-                    <TasksPage />;
+                    <TasksPage />
                 </Route>
                 <Route path="/autor">
-                    <Author />;
+                    <Author />
                 </Route>
                 <Route path="/">
-                    <Redirect to="/zadania"></Redirect>;
+                    <Redirect to="/zadania"></Redirect>
                 </Route>
             </Switch>
         </StyledNav>
     </HashRouter>
-
-
-
 )
 
 

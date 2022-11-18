@@ -15,6 +15,7 @@ export const StyledUlList = styled.ul`
 
 export const StyledLiList = styled.li`
 width: max-content;
+font-size: 20px;
 padding: 10px;
 margin: 0 5px;
 transition: 0.5s;
