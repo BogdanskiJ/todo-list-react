@@ -47,7 +47,7 @@ export const selectHideDone = state => selectTasksState(state).hideDone;
 
 export const getTaskById = (state, taskId) => selectTasks(state).find(({ id }) => id === taskId);
 
-export const selectTasksByQuery = (state, query) => selectTasks(state);
+export const selectTasksByQuery = (state, query) => selectTasks(state).filter(({content}) => content.includes(query));
 
 
 export default tasksSlice.reducer;
