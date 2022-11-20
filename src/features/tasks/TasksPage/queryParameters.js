@@ -1,39 +1,26 @@
-export const selectTasks = state => selectTasksState(state).tasks;
+import { useLocation, useHistory } from "react-router-dom"
 
-export const selectHideDone = state => selectTasksState(state).hideDone;
-
-export const getTaskById = (state, taskId) => selectTasks(state).find(({ id }) => id === taskId);
-
-export const selectTasksByQuery = (state, query) => {
-    const tasks = selectTasks(state);
-
-    if (!query || query.trim() === "") {
-        return tasks;
-    }
-    return tasks.filter(({ content }) => content.toUpperCase().includes(query.trim().toUpperCase()))
-};
+export const useQueryParameter = (param) => {
+    const location = useLocation();
 
 
-const que = (new URLSearchParams(location.search)).get(searchQueryParamName);
-
-
-export const [queryParam, setQueryParam] = useQueryParameter(params);
-const setQuery = (params) => {
-    setQueryParam(new URLSearchParams(location.search)).get(params)
+    return (new URLSearchParams(location.search)).get(param)
 }
 
 
-setQueryParam(new URLSearchParams(location.search)).get(params)
+export const useReplaceQueryPatameter = (key, value) => {
+    const location = useLocation();
+    const history = useHistory();
 
+    return ({ key, value }) => {
+        const searchParams = new URLSearchParams(location.search);
 
+        if (value === "") {
+            searchParams.delete(key);
+        } else {
+            searchParams.set(key, value)
+        }
 
-
-
-const [exampleTasksStatus, setExampleTasksStatus] = useState({
-    state: false
-});
-
-const timeout = () => {
-    setExampleTasksStatus({ state: true })
-    setTimeout(() => setExampleTasksStatus({ state: false }) & (dispatch(fetchExampleTasks())), 1000)
-};
+        history.push(`${location.pathname}?${searchParams.toString()}`)
+    }
+}
