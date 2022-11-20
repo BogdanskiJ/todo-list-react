@@ -1,5 +1,16 @@
 import styled from "styled-components";
 
+export default  styled.input`
+    padding: 10px;
+
+    @media (max-width: 767px) {
+        width: 100%;
+        text-align: center;
+        
+    }
+`;
+/*
+
 export const FormJs = styled.form`
     background-color: white;
     padding: 20px;
@@ -36,3 +47,5 @@ export const ButtonJs = styled.button`
     }
 
 `;
+
+*/

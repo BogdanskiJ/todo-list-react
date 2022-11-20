@@ -8,9 +8,10 @@ import Container from "../../../common/Container";
 import { useLocation, useParams } from "react-router-dom";
 import { getTaskById } from "../tasksSlice";
 import { useSelector } from "react-redux";
+import Search from "./Search";
 
 function TasksPage() {
-   return (
+  return (
     <Container>
       <Header title="Lista zadań" />
       <Section
@@ -18,7 +19,10 @@ function TasksPage() {
         title="Dodaj nowe zadanie"
         body={<Form />}
       />
-
+      <Section
+        title="Wyszukiwarka"
+        body={<Search />}
+      />
       <Section
         title="Lista zadań"
         body={<TasksList />}
