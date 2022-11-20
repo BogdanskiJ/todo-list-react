@@ -14,8 +14,16 @@ const Section = ({ title, body, extraHeaderContent, setExampleTasks }) => (
       {body}
     </BackgroundColor>
   </SectionJs>
+);
 
-
+export const WrongTaskSection = ({ title, body, extraHeaderContent, setExampleTasks }) => (
+  <SectionJs>
+    <DivJs>
+      <HeaderJs>{title}</HeaderJs>
+      {extraHeaderContent}
+      {setExampleTasks}
+    </DivJs>
+  </SectionJs>
 );
 
 export default Section;

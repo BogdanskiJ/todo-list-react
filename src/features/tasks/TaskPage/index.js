@@ -1,4 +1,4 @@
-import Section from "../../../common/Section";
+import Section, { WrongTaskSection } from "../../../common/Section";
 import Header from "../../../common/Header";
 import Container from "../../../common/Container";
 
@@ -13,13 +13,24 @@ function TaskPage() {
     return (
         <Container>
             <Header title="Szczegóły zadania" />
-            <Section
-                title={task ? task.content : "Przykro mi, ale nie znaleziono zadania 🙁"}
-                body={
-                <>
-                <strong>Ukończono:</strong> {task.done ? "Tak" : "Nie"}
-                </>}
-            />
+            {task
+                ? <Section
+                    title={task.content}
+                    body={
+                        <>
+                            {(task.done
+                                ? <div><strong>Ukończono:</strong> Tak</div>
+                                : <div><strong>Ukończono:</strong> Nie</div>)}
+                        </>
+                    }
+                />
+                : <WrongTaskSection
+                    title={"Przykro mi, ale nie znaleziono takiego zadania 🙁"}
+                />
+            }
+
+
+
         </Container>
     );
 }
