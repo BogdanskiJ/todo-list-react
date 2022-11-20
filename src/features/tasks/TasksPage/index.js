@@ -5,9 +5,6 @@ import Buttons, { ExampleTaskButtons } from "./Buttons";
 import Section from "../../../common/Section";
 import Header from "../../../common/Header";
 import Container from "../../../common/Container";
-import { useLocation, useParams } from "react-router-dom";
-import { getTaskById } from "../tasksSlice";
-import { useSelector } from "react-redux";
 import Search from "./Search";
 
 function TasksPage() {

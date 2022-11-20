@@ -1,7 +1,7 @@
 import React from "react";
 import TasksPage from "./features/tasks/TasksPage/index";
 import TaskPage from "./features/tasks/TaskPage";
-import { Link, Switch, Route, HashRouter, Redirect } from "react-router-dom";
+import { Switch, Route, HashRouter, Redirect } from "react-router-dom";
 import Author from "./features/author/Author";
 import { StyledNav, StyledLiList, StyledUlList, StyledLink } from "./styled";
 

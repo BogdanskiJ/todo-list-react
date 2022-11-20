@@ -8,16 +8,14 @@ export const useQueryParameter = (param) => {
 }
 
 
-export const useReplaceQueryPatameter = (key, value) => {
+export const useReplaceQueryPatameter = () => {
     const location = useLocation();
     const history = useHistory();
 
     return ({ key, value }) => {
         const searchParams = new URLSearchParams(location.search);
 
-        if (value === "") {
-            searchParams.delete(key);
-        } else {
+        if (value !== " ") {
             searchParams.set(key, value)
         }
 
