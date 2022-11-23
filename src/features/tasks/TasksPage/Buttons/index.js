@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ButtonJs } from "./styled";
+import { ButtonJs } from "./styled"
 import { useSelector, useDispatch } from "react-redux";
 import { selectTasksState, toggleHideDone, setAllDone, fetchExampleTasks } from "../../tasksSlice";
 

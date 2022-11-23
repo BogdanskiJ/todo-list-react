@@ -31,10 +31,12 @@ export const ButtonJs = styled.button`
 
     &:hover {
         background-color: hsl(120, 100%, 30%);
+        cursor: pointer;
     };
   
     &:active {
         background-color: hsl(120, 100%, 40%);
+        cursor: pointer;
     };
 `;
 
@@ -56,10 +58,12 @@ export const ButtonDelete = styled.button`
 
     &:hover {
         background-color: hsl(0, 65%, 65%);
+        cursor: pointer;
     };
   
     &:active {
-        background-color: hsl(0, 65%, 70%)
+        background-color: hsl(0, 65%, 70%);
+        cursor: pointer;
     };
 `;
 

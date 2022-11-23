@@ -20,6 +20,7 @@ export const ButtonJs = styled.button`
     color: white;
     border: none;
     transition: 1s;
+    cursor: pointer;
 
     @media (max-width: 767px) {
         width: 100%;
@@ -29,10 +30,12 @@ export const ButtonJs = styled.button`
     &:hover{
         background-color: hsl(180, 100%, 30%);
         transform: scale(1.1);
+        cursor: pointer;
     };
 
     &:active{
         background-color: hsl(180, 100%, 40%);
+        cursor: pointer;
     }
 
 `;
