@@ -1,7 +1,7 @@
 # To Do List (React)
 
 ## Table of content
-- Demo
+- [Demo]
 - General info
 - To Do List
 - Technologies
