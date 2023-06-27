@@ -5,7 +5,6 @@ export const SectionJs = styled.section`
 `;
 
 export const DivJs = styled.div`
-    background-color: white;
     display: grid;
     grid-template-columns: 1fr auto auto;
     gap: 20px;
@@ -26,8 +25,7 @@ export const HeaderJs = styled.h2`
 `;
 
 export const BackgroundColor = styled.div`
-    background-color: white;
-    padding: 20px 10px;
+padding: 20px 10px;
     margin: 3px;
 `;
 

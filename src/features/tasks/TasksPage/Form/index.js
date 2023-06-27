@@ -26,7 +26,7 @@ const Form = () => {
         inputRef.current.focus();
     };
     return (
-        <FormJs
+        <FormJs 
             onSubmit={onFormSubmit}
         >
             <Input

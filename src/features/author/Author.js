@@ -18,6 +18,6 @@ export default () => (
                     </p>
                 </>
             }
-            />
+        />
     </Container>
 );

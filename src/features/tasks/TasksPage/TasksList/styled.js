@@ -24,7 +24,6 @@ export const ButtonJs = styled.button`
     width: 35px;
     height: 35px;
     background-color: green;
-    color: white;
     padding: 0;
     border: none;
     transition: 1s;
@@ -41,7 +40,7 @@ export const ButtonJs = styled.button`
 `;
 
 export const Content = styled.span`
-    ${({done}) => done && css`
+    ${({ done }) => done && css`
     text-decoration: line-through;
     `}
        
@@ -51,7 +50,6 @@ export const ButtonDelete = styled.button`
     width: 35px;
     height: 35px;
     background-color: rgb(219, 84, 84);
-    color: white;
     padding: 0;
     border: none;
     transition: 1s;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
+
 export const FormJs = styled.form`
-    background-color: white;
     padding: 20px;
     margin: 3px;
     display: grid;
@@ -17,7 +17,7 @@ export const FormJs = styled.form`
 
 export const ButtonJs = styled.button`
     background-color: teal;
-    color: white;
+
     border: none;
     transition: 1s;
     cursor: pointer;

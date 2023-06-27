@@ -29,7 +29,6 @@ export const StyledNav = styled.nav`
 `;
 export const StyledLink = styled(Link)`
  text-decoration:none;
- color:white;
  transition: 0.5s;
     &:focus {
         font-weight:bold;
