@@ -1,22 +1,26 @@
 # To Do List (React)
 
 ## Table of content
+
 - [Demo]
 - General info
 - To Do List
 - Technologies
 
 ## Demo
-[Todo List](https://kubabogd.github.io/todo-list-react/)
 
+[Todo List](https://bogdanskij.github.io/todo-list-react/)
 
 ## General info
+
 Task Manager online. You can easly add and remove your task. With this application you will be able organize your work.
 
 ## Adding and Removing Tasks
+
 ![Task Manager Gif](images/toDoListReact.gif)
 
 ## Technologies
+
 - HTML
 - CSS
 - JS
